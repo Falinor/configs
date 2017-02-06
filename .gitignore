@@ -1,0 +1,10 @@
+*~
+*.swp
+*.o
+*.a
+*.so
+*.class
+*.log
+*.pdf
+.vim/bundle/
+setup.log
