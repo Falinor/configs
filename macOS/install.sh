@@ -3,7 +3,7 @@
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # Core packages
-brew install wget curl git
+brew install wget curl git tree
 
 # Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -37,6 +37,7 @@ source ~/.zshrc
 
 # TODO: install docker via .dmg
 # TODO: install code editors
+# TODO: check .zshrc
 
 echo "\n----- TODO -----\n"
 
