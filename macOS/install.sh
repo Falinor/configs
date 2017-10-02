@@ -1,5 +1,15 @@
 #! /bin/bash
 
+### Install hidden files and directories ###
+
+cd $HOME && echo "Going to $HOME..." >> $OLDPWD/setup.log
+# Symlink important files
+ln -sf $OLDPWD/.vimrc
+ln -sf $OLDPWD/.zshrc
+# Copy those files because they will be modified after installation
+cp -r $OLDPWD/.fonts
+cp -r $OLDPWD/.vim
+
 # We assume Homebrew was installed before. If it is not the case, do it using
 # /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -11,20 +21,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 zsh --version > setup.log
 
 # iTerm2
-wget https://iterm2.com/downloads/stable/latest -O iTerm.zip && \
-  unzip iTerm.zip && \
-  mv iTerm.app /Applications && \
-  rm -r ./iTerm.zip ./iTerm.app && \
-  echo "Done installing iTerm2" >> setup.log
-
-### Install hidden files and directories ###
-
-cd $HOME && echo "Going to $HOME..." >> $OLDPWD/setup.log
-# Symlink important files
-ln -sf $OLDPWD/.fonts
-ln -sf $OLDPWD/.vim
-ln -sf $OLDPWD/.vimrc
-ln -sf $OLDPWD/.zshrc
+if [ ! -d /Application/iTerm.app ]; then
+  wget https://iterm2.com/downloads/stable/latest -O iTerm.zip && \
+    unzip iTerm.zip && \
+    mv iTerm.app /Applications && \
+    rm -r ./iTerm.zip ./iTerm.app && \
+    echo "Done installing iTerm2" >> setup.log
+fi
 
 # Neobundle -> neocomplete, vim-airline
 brew install vim --with-lua --with-python3 --with-override-system-vi
