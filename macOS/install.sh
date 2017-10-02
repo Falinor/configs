@@ -18,7 +18,7 @@ brew install wget curl git tree
 
 # Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-zsh --version > setup.log
+zsh --version > $OLDPWD/setup.log
 
 # iTerm2
 if [ ! -d /Applications/iTerm.app ]; then
