@@ -1,7 +1,8 @@
 #! /bin/bash
 
-# Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# We assume Homebrew was installed before. If it is not the case, do it using
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # Core packages
 brew install wget curl git tree
 
@@ -12,21 +13,18 @@ zsh --version > setup.log
 # iTerm2
 wget https://iterm2.com/downloads/stable/latest -O iTerm.zip && \
   unzip iTerm.zip && \
-  mv iTerm.app /Applications/
+  mv iTerm.app /Applications && \
+  rm -r ./iTerm.zip ./iTerm.app && \
+  echo "Done installing iTerm2" >> setup.log
 
 ### Install hidden files and directories ###
 
-cd $HOME && echo "Going to $HOME..." >> setup.log
-# Loop over files
-for file in $(ls -a $OLDPWD); do
-  case "$file" in
-    ".git")         echo "Ignoring .git";;
-    ".gitignore")   echo "Ignoring .gitignore";;
-    "$0")           echo "Ignoring $0";;
-    # Make symlinks from git repository to $HOME
-    *)              ln -sf "$OLDPWD/$file";;
-  esac
-done
+cd $HOME && echo "Going to $HOME..." >> $OLDPWD/setup.log
+# Symlink important files
+ln -sf $OLDPWD/.fonts
+ln -sf $OLDPWD/.vim
+ln -sf $OLDPWD/.vimrc
+ln -sf $OLDPWD/.zshrc
 
 # Neobundle -> neocomplete, vim-airline
 brew install vim --with-lua --with-python3 --with-override-system-vi
@@ -44,6 +42,3 @@ echo "\n----- TODO -----\n"
 echo "Install code editors\n"
 echo "Install Monaco for Powerline font\n"
 echo "Setup ssh\n"
-
-echo "----- Optional -----\n"
-

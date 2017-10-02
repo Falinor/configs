@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/inad/.oh-my-zsh
+export ZSH=/Users/inad/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -9,6 +9,10 @@ ZSH_THEME="af-magic"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -45,11 +49,11 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man command-not-found pip)
+plugins=(git docker docker-compose)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -78,43 +82,45 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-##### Aliases #####
-export NNTPSERVER='news.epita.fr'
+
 export pager=most
 
-####### General aliases #######
-alias lock="i3lock -d -i ~/cat-wp.png"
-alias us='setxkbmap us && echo Changed to us keymap successfully'
-alias fr='setxkbmap fr && echo Changed to fr keymap successfully'
+# General aliases
 alias c='clear'
 alias t='tree'
-alias j='jobs'
-alias logout='i3-msg exit'
 
-####### Brightness #######
-alias lumiless='xrandr --output eDP1 --brightness 0.7'
-alias lumimore='xrandr --output eDP1 --brightness 1'
+# SQL aliases
+alias mysql='/usr/local/mysql/bin/mysql'
+alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
+alias psql='/Library/PostgreSQL/9.5/scripts/runpsql.sh; exit'
 
-####### Keyboard #######
-alias kbrestart='ibus-daemon -rd'
-alias reload-fonts='fc-cache -f -v'
+# Docker aliases
+# Delete all containers
+alias drmps='docker rm $(docker ps -a -q)'
+# Delete all images
+alias drmi='docker rmi $(docker images -q)'
 
-#######################
-#eval lumiless
+# nvm settings
+export NVM_DIR="/Users/inad/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-####### Screen saver #######
-export DISPLAY=:0.0
-xset s off
-xset s noblank
-xset -dpms
+# Java maven aliases
+export M2_HOME=/opt/maven
+export PATH=/opt/maven/bin:$PATH
 
-####### Background image #######
-#feh --bg-center wallpaper.png
-feh --bg-center lake-wp.png
+export PATH=/usr/local/sbin:$PATH
 
-# Bind escape to capslock
-setxkbmap -layout us -option caps:escape
+# Fix python virtualenv framework installation
+# matplotlib and some other libs won't work without this
+function pythonframework() {
+  if [[ ! -z "$VIRTUAL_ENV" ]]; then
+    PYTHONHOME=$VIRTUAL_ENV /usr/local/bin/python3 "$@"
+  else
+    /usr/local/bin/python3 "$@"
+  fi
+}
 
-# gcc and g++ compilers colors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export PATH="$HOME/.yarn/bin:$PATH"
+
+# added by travis gem
+[ -f /Users/inad/.travis/travis.sh ] && source /Users/inad/.travis/travis.sh
