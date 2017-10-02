@@ -25,8 +25,8 @@ if [ ! -d /Application/iTerm.app ]; then
   wget https://iterm2.com/downloads/stable/latest -O iTerm.zip && \
     unzip iTerm.zip && \
     mv iTerm.app /Applications && \
-    rm -r ./iTerm.zip ./iTerm.app && \
-    echo "Done installing iTerm2" >> setup.log
+    rm -r ./iTerm.zip && \
+    echo "Done installing iTerm2." >> setup.log
 fi
 
 # Neobundle -> neocomplete, vim-airline
