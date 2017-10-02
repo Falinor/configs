@@ -21,12 +21,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 zsh --version > setup.log
 
 # iTerm2
-if [ ! -d /Application/iTerm.app ]; then
+if [ ! -d /Applications/iTerm.app ]; then
   wget https://iterm2.com/downloads/stable/latest -O iTerm.zip && \
     unzip iTerm.zip && \
     mv iTerm.app /Applications && \
     rm -r ./iTerm.zip && \
-    echo "Done installing iTerm2." >> setup.log
+    echo "Done installing iTerm2." >> $OLDPWD/setup.log
 fi
 
 # Neobundle -> neocomplete, vim-airline
