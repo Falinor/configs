@@ -7,8 +7,8 @@ cd $HOME && echo "Going to $HOME..." >> $OLDPWD/setup.log
 ln -sf $OLDPWD/.vimrc
 ln -sf $OLDPWD/.zshrc
 # Copy those files because they will be modified after installation
-cp -r $OLDPWD/.fonts
-cp -r $OLDPWD/.vim
+cp -r $OLDPWD/.fonts .
+cp -r $OLDPWD/.vim .
 
 # We assume Homebrew was installed before. If it is not the case, do it using
 # /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
