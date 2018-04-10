@@ -15,7 +15,7 @@
 [alias]
 	civ = commit
 	lg = log --decorate --branches --graph
-	lgo = log --decorate --branches --graph --oneline
+  lgo = log --graph --decorate --oneline --abbrev-commit --all
   slog = shortlog
 	b = branch
 	cmi = commit -m
