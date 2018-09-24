@@ -3,12 +3,32 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Main.kt" timestamp="1537735029184">
+        <mark key="[" line="0" column="4" />
+        <mark key="]" line="1" column="0" />
+        <mark key="^" line="1" column="0" />
+        <mark key="." line="1" column="0" />
+      </file>
       <file name="$USER_HOME$/Downloads/demo/src/main/java/com/example/demo/user/UserController.java" timestamp="1531428665600">
         <mark key="[" line="6" column="0" />
         <mark key="]" line="6" column="0" />
         <mark key="." line="6" column="0" />
       </file>
+      <file name="$USER_HOME$/Dev/tak/build.gradle.kts" timestamp="1537734393072">
+        <mark key="[" line="3" column="0" />
+        <mark key="]" line="3" column="0" />
+        <mark key="." line="3" column="0" />
+      </file>
       <file name="/a.dummy" timestamp="1531428974160">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Board.kt" timestamp="1537770284262">
+        <mark key="[" line="4" column="0" />
+        <mark key="]" line="4" column="0" />
+        <mark key="^" line="3" column="37" />
+        <mark key="." line="4" column="0" />
+      </file>
+      <file name="/fragment.java" timestamp="1537770175122">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Downloads/demo/src/main/java/com/example/demo/user/User.java" timestamp="1531428861177">
@@ -20,24 +40,44 @@
     </filemarks>
     <jumps />
     <registers>
+      <register name="0" type="4">
+        <text>Must have a size of 3x3, 4x4, 5x5, 6x6 or 8x8&quot;</text>
+      </register>
       <register name="1" type="2">
-        <text encoding="base64">fQo=</text>
+        <text encoding="base64">ICAgICAgdGhyb3cgVGhyb3dhYmxlKCJNdXN0IGhhdmUgYSBzaXplIG9mIDN4MywgNHg0LCA1eDUsIDZ4NiBvciA4eDgiKQo=</text>
       </register>
       <register name="&quot;" type="2">
-        <text encoding="base64">fQo=</text>
+        <text encoding="base64">ICAgICAgdGhyb3cgVGhyb3dhYmxlKCJNdXN0IGhhdmUgYSBzaXplIG9mIDN4MywgNHg0LCA1eDUsIDZ4NiBvciA4eDgiKQo=</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">CiAgICBwdWJsaWMgc3RhdGljIHZvaWQgbWFpbihTdHJpbmdbXSBhcmdzKSB7CiAgICAgICAgbmV3IFVzZXIoKS5idWlsZGVyKCkubmFtZSgidGVzdCIpLmJ1aWxkKCk7CiAgICB9</text>
+      <register name="2" type="2">
+        <text encoding="base64">ICAKfQo=</text>
       </register>
       <register name="3" type="2">
+        <text encoding="base64">ICAgIGphdmEK</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">fQo=</text>
+      </register>
+      <register name="5" type="4">
+        <text encoding="base64">CiAgICBwdWJsaWMgc3RhdGljIHZvaWQgbWFpbihTdHJpbmdbXSBhcmdzKSB7CiAgICAgICAgbmV3IFVzZXIoKS5idWlsZGVyKCkubmFtZSgidGVzdCIpLmJ1aWxkKCk7CiAgICB9</text>
+      </register>
+      <register name="6" type="2">
         <text encoding="base64">ICAgIAo=</text>
+      </register>
+      <register name="-" type="4">
+        <text>IllegalArgumentException</text>
       </register>
     </registers>
     <search>
       <last-dir>0</last-dir>
       <show-last>false</show-last>
     </search>
-    <history />
+    <history>
+      <history-search />
+      <history-cmd />
+      <history-expr />
+      <history-input />
+    </history>
     <shortcut-conflicts />
   </component>
 </application>
