@@ -14,10 +14,10 @@
         <mark key="]" line="6" column="0" />
         <mark key="." line="6" column="0" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/build.gradle.kts" timestamp="1537856072411">
+      <file name="$USER_HOME$/Dev/tak/build.gradle.kts" timestamp="1537856993884">
         <mark key="[" line="16" column="39" />
-        <mark key="]" line="3" column="0" />
-        <mark key="." line="3" column="0" />
+        <mark key="]" line="16" column="39" />
+        <mark key="." line="16" column="39" />
       </file>
       <file name="/a.dummy" timestamp="1531428974160">
         <mark key="[" line="0" column="0" />
@@ -54,8 +54,8 @@
       <register name="1" type="2">
         <text encoding="base64">Cg==</text>
       </register>
-      <register name="&quot;" type="2">
-        <text encoding="base64">Cg==</text>
+      <register name="&quot;" type="4">
+        <text>junit</text>
       </register>
       <register name="2" type="2">
         <text encoding="base64">aW1wb3J0IGtvdGxpbi50YWtlCg==</text>
@@ -79,7 +79,7 @@
         <text encoding="base64">ICAgIAo=</text>
       </register>
       <register name="-" type="4">
-        <text>IllegalArgumentException</text>
+        <text>junit</text>
       </register>
     </registers>
     <search>
