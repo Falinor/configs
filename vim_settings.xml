@@ -14,19 +14,22 @@
         <mark key="]" line="6" column="0" />
         <mark key="." line="6" column="0" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/build.gradle.kts" timestamp="1537856993884">
-        <mark key="[" line="16" column="39" />
-        <mark key="]" line="16" column="39" />
-        <mark key="." line="16" column="39" />
+      <file name="$USER_HOME$/Dev/tak/build.gradle.kts" timestamp="1537908294341">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="16" column="0" />
+        <mark key="]" line="16" column="0" />
+        <mark key="." line="16" column="0" />
+        <mark key="^" line="17" column="62" />
       </file>
       <file name="/a.dummy" timestamp="1531428974160">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" timestamp="1537823627073">
+      <file name="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" timestamp="1537908402460">
         <mark key="'" line="2" column="1" />
-        <mark key="[" line="1" column="0" />
-        <mark key="]" line="0" column="0" />
-        <mark key="." line="0" column="0" />
+        <mark key="[" line="2" column="17" />
+        <mark key="]" line="5" column="102" />
+        <mark key="." line="5" column="102" />
+        <mark key="^" line="5" column="102" />
       </file>
       <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Board.kt" timestamp="1537770284262">
         <mark key="[" line="4" column="0" />
@@ -46,40 +49,48 @@
     </filemarks>
     <jumps>
       <jump line="2" column="1" filename="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" />
+      <jump line="13" column="0" filename="$USER_HOME$/Dev/tak/build.gradle.kts" />
+      <jump line="0" column="0" filename="$USER_HOME$/Dev/tak/build.gradle.kts" />
     </jumps>
     <registers>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICBAVGVzdAogIHB1YmxpYyBmdW5jdGlvbgo=</text>
+      </register>
+      <register name="-" type="4">
+        <text>junit</text>
+      </register>
       <register name="0" type="4">
         <text>Must have a size of 3x3, 4x4, 5x5, 6x6 or 8x8&quot;</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">Cg==</text>
-      </register>
-      <register name="&quot;" type="4">
-        <text>junit</text>
+        <text encoding="base64">ICBAVGVzdAogIHB1YmxpYyBmdW5jdGlvbgo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">aW1wb3J0IGtvdGxpbi50YWtlCg==</text>
+        <text encoding="base64">ICAgIHRlc3RDb21waWxlKCJvcmcuanVuaXQucGxhdGZvcm0iLCAianVuaXQtcGxhdGZvcm0tY29tbW9ucyIsICIxIikK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgdGhyb3cgVGhyb3dhYmxlKCJNdXN0IGhhdmUgYSBzaXplIG9mIDN4MywgNHg0LCA1eDUsIDZ4NiBvciA4eDgiKQo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAKfQo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIGphdmEK</text>
+        <text encoding="base64">aW1wb3J0IGtvdGxpbi50YWtlCg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">fQo=</text>
+        <text encoding="base64">ICAgICAgdGhyb3cgVGhyb3dhYmxlKCJNdXN0IGhhdmUgYSBzaXplIG9mIDN4MywgNHg0LCA1eDUsIDZ4NiBvciA4eDgiKQo=</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">CiAgICBwdWJsaWMgc3RhdGljIHZvaWQgbWFpbihTdHJpbmdbXSBhcmdzKSB7CiAgICAgICAgbmV3IFVzZXIoKS5idWlsZGVyKCkubmFtZSgidGVzdCIpLmJ1aWxkKCk7CiAgICB9</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAKfQo=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIAo=</text>
+        <text encoding="base64">ICAgIGphdmEK</text>
       </register>
-      <register name="-" type="4">
-        <text>junit</text>
+      <register name="9" type="2">
+        <text encoding="base64">fQo=</text>
+      </register>
+      <register name=":" type="4">
+        <text>w</text>
       </register>
     </registers>
     <search>
@@ -88,7 +99,9 @@
     </search>
     <history>
       <history-search />
-      <history-cmd />
+      <history-cmd>
+        <entry>w</entry>
+      </history-cmd>
       <history-expr />
       <history-input />
     </history>
