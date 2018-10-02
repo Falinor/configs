@@ -24,12 +24,12 @@
       <file name="/a.dummy" timestamp="1531428974160">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" timestamp="1537908402460">
+      <file name="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" timestamp="1538512814943">
         <mark key="'" line="2" column="1" />
-        <mark key="[" line="2" column="17" />
-        <mark key="]" line="5" column="102" />
-        <mark key="." line="5" column="102" />
-        <mark key="^" line="5" column="102" />
+        <mark key="[" line="7" column="33" />
+        <mark key="]" line="7" column="42" />
+        <mark key="." line="7" column="42" />
+        <mark key="^" line="7" column="42" />
       </file>
       <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Board.kt" timestamp="1537770284262">
         <mark key="[" line="4" column="0" />
@@ -54,40 +54,40 @@
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICBAVGVzdAogIHB1YmxpYyBmdW5jdGlvbgo=</text>
+        <text encoding="base64">ICAgIAogICAgVE9ETygibm90IGltcGxlbWVudGVkIikgLy9UbyBjaGFuZ2UgYm9keSBvZiBjcmVhdGVkIGZ1bmN0aW9ucyB1c2UgRmlsZSB8IFNldHRpbmdzIHwgRmlsZSBUZW1wbGF0ZXMuCg==</text>
       </register>
       <register name="-" type="4">
-        <text>junit</text>
+        <text>new</text>
       </register>
       <register name="0" type="4">
         <text>Must have a size of 3x3, 4x4, 5x5, 6x6 or 8x8&quot;</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICBAVGVzdAogIHB1YmxpYyBmdW5jdGlvbgo=</text>
+        <text encoding="base64">ICAgIAogICAgVE9ETygibm90IGltcGxlbWVudGVkIikgLy9UbyBjaGFuZ2UgYm9keSBvZiBjcmVhdGVkIGZ1bmN0aW9ucyB1c2UgRmlsZSB8IFNldHRpbmdzIHwgRmlsZSBUZW1wbGF0ZXMuCg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAgIHRlc3RDb21waWxlKCJvcmcuanVuaXQucGxhdGZvcm0iLCAianVuaXQtcGxhdGZvcm0tY29tbW9ucyIsICIxIikK</text>
+        <text encoding="base64">ICAgIC8vIFRPRE8K</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgIFRPRE8oIm5vdCBpbXBsZW1lbnRlZCIpIC8vVG8gY2hhbmdlIGJvZHkgb2YgY3JlYXRlZCBmdW5jdGlvbnMgdXNlIEZpbGUgfCBTZXR0aW5ncyB8IEZpbGUgVGVtcGxhdGVzLgo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICBAVGVzdAogIHB1YmxpYyBmdW5jdGlvbgo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">aW1wb3J0IGtvdGxpbi50YWtlCg==</text>
+        <text encoding="base64">ICAgIHRlc3RDb21waWxlKCJvcmcuanVuaXQucGxhdGZvcm0iLCAianVuaXQtcGxhdGZvcm0tY29tbW9ucyIsICIxIikK</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgdGhyb3cgVGhyb3dhYmxlKCJNdXN0IGhhdmUgYSBzaXplIG9mIDN4MywgNHg0LCA1eDUsIDZ4NiBvciA4eDgiKQo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAKfQo=</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIGphdmEK</text>
+        <text encoding="base64">aW1wb3J0IGtvdGxpbi50YWtlCg==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">fQo=</text>
+        <text encoding="base64">ICAgICAgdGhyb3cgVGhyb3dhYmxlKCJNdXN0IGhhdmUgYSBzaXplIG9mIDN4MywgNHg0LCA1eDUsIDZ4NiBvciA4eDgiKQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
