@@ -3,12 +3,6 @@
     <state version="4" enabled="true" />
     <globalmarks />
     <filemarks>
-      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Main.kt" timestamp="1537735029184">
-        <mark key="[" line="0" column="4" />
-        <mark key="]" line="1" column="0" />
-        <mark key="^" line="1" column="0" />
-        <mark key="." line="1" column="0" />
-      </file>
       <file name="$USER_HOME$/Downloads/demo/src/main/java/com/example/demo/user/UserController.java" timestamp="1531428665600">
         <mark key="[" line="6" column="0" />
         <mark key="]" line="6" column="0" />
@@ -24,27 +18,53 @@
       <file name="/a.dummy" timestamp="1531428974160">
         <mark key="[" line="0" column="0" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" timestamp="1538557505439">
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Square.kt" timestamp="1540412082666">
+        <mark key="[" line="0" column="71" />
+        <mark key="]" line="0" column="75" />
+        <mark key="^" line="0" column="75" />
+        <mark key="." line="0" column="75" />
+      </file>
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Player.kt" timestamp="1540412283167">
+        <mark key="[" line="0" column="20" />
+        <mark key="]" line="0" column="34" />
+        <mark key="^" line="0" column="34" />
+        <mark key="." line="0" column="34" />
+      </file>
+      <file name="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" timestamp="1540411850267">
         <mark key="'" line="51" column="0" />
-        <mark key="[" line="54" column="4" />
-        <mark key="]" line="55" column="4" />
-        <mark key="." line="55" column="4" />
-        <mark key="^" line="56" column="5" />
+        <mark key="[" line="55" column="6" />
+        <mark key="]" line="55" column="9" />
+        <mark key="." line="55" column="9" />
+        <mark key="^" line="55" column="9" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Stone.kt" timestamp="1538514046922">
-        <mark key="[" line="0" column="18" />
-        <mark key="]" line="3" column="9" />
-        <mark key="^" line="3" column="9" />
-        <mark key="." line="3" column="9" />
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Main.kt" timestamp="1537735029184">
+        <mark key="[" line="0" column="4" />
+        <mark key="]" line="1" column="0" />
+        <mark key="^" line="1" column="0" />
+        <mark key="." line="1" column="0" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Board.kt" timestamp="1538514790887">
-        <mark key="'" line="18" column="20" />
-        <mark key="[" line="17" column="8" />
-        <mark key="]" line="18" column="20" />
-        <mark key="." line="18" column="20" />
-        <mark key="^" line="18" column="20" />
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Point.kt" timestamp="1540408617092">
+        <mark key="[" line="0" column="20" />
+        <mark key="]" line="0" column="4" />
+        <mark key="^" line="0" column="4" />
+        <mark key="." line="0" column="18" />
       </file>
-      <file name="/fragment.java" timestamp="1537770175122">
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/GameManager.kt" timestamp="1540412254242">
+        <mark key="[" line="0" column="20" />
+      </file>
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Stone.kt" timestamp="1540412050462">
+        <mark key="[" line="0" column="21" />
+        <mark key="]" line="0" column="21" />
+        <mark key="^" line="0" column="30" />
+        <mark key="." line="0" column="21" />
+      </file>
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Board.kt" timestamp="1540411770822">
+        <mark key="[" line="28" column="0" />
+        <mark key="]" line="28" column="2" />
+        <mark key="^" line="28" column="2" />
+        <mark key="." line="28" column="2" />
+      </file>
+      <file name="/fragment.java" timestamp="1540408769437">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Downloads/demo/src/main/java/com/example/demo/user/User.java" timestamp="1531428861177">
@@ -52,6 +72,9 @@
         <mark key="]" line="13" column="0" />
         <mark key="." line="13" column="0" />
         <mark key="^" line="13" column="0" />
+      </file>
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Color.kt" timestamp="1540408776168">
+        <mark key="[" line="1" column="0" />
       </file>
     </filemarks>
     <jumps>
@@ -68,13 +91,14 @@
       <jump line="43" column="0" filename="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" />
       <jump line="45" column="2" filename="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" />
       <jump line="51" column="0" filename="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" />
+      <jump line="25" column="0" filename="$USER_HOME$/Dev/tak/src/main/kotlin/Board.kt" />
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">YXNzZXJ0VGhyb3dzPElsbGVnYWxBcmd1bWVudEV4Y2VwdGlvbj4gewogICAgICB2YWwgYm9hcmQgPSBCb2FyZCgxKQogICAgfQ==</text>
+        <text>Position</text>
       </register>
       <register name="-" type="4">
-        <text>.</text>
+        <text>Position</text>
       </register>
       <register name="/" type="4">
         <text>5</text>
@@ -82,33 +106,32 @@
       <register name="0" type="2">
         <text encoding="base64">ICBAVGVzdAogIGludGVybmFsIGZ1biB3aGVuQ29uc3RydWN0aW5nQm9hcmRXaXRoU2l6ZTVfdGhlblJldHVybjV4NUJvYXJkKCkgewogICAgdmFsIGJvYXJkID0gQm9hcmQoNSkKICAgIEFzc2VydGlvbnMuYXNzZXJ0RXF1YWxzKDUsIGJvYXJkLnNpemUpCiAgICBBc3NlcnRpb25zLmFzc2VydEVxdWFscygyMSwgYm9hcmQuc3RvbmVzKQogICAgQXNzZXJ0aW9ucy5hc3NlcnRFcXVhbHMoMSwgYm9hcmQuY2Fwc3RvbmVzKQogIH0K</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">YXNzZXJ0VGhyb3dzPElsbGVnYWxBcmd1bWVudEV4Y2VwdGlvbj4gewogICAgICB2YWwgYm9hcmQgPSBCb2FyZCgxKQogICAgfQ==</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIEFzc2VydGlvbnMuYXNzZXJ0VGhyb3dzKCkK</text>
       </register>
-      <register name="2" type="2">
-        <text encoding="base64">ICAgIGFzc2VydFRocm93czxJbGxlZ2FsQXJndW1lbnRFeGNlcHRpb24+IHsK</text>
+      <register name="2" type="4">
+        <text encoding="base64">CiAgZnVuIHJlc2V0KCkgewogICAgZm9yIChpIGluIG1hdHJpeC5pbmRpY2VzKQogICAgICBmb3IgKGogaW4gbWF0cml4W2ldLmluZGljZXMpIHsKICAgICAgICB2YWwgY29sb3I6IENvbG9yID0gaWYgKGlzUGFpcihpLCBqKSkgQ29sb3IuQkxBQ0sgZWxzZSBDb2xvci5XSElURQogICAgICAgIG1hdHJpeFtpXVtqXSA9IFNxdWFyZShjb2xvcikKICAgICAgfQogIH0=</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgICAgICB2YWwgY29sb3IgPSBpZiBpc1BhaXIoaSwgaikgQ29sb3IuQkxBQ0sgZWxzZSBDb2xvci5XSElURQo=</text>
       </register>
-      <register name="4" type="2">
-        <text encoding="base64">Ly8gICAgICB2YWwgYm9hcmQgPSBCb2FyZCgxKQo=</text>
+      <register name="4" type="4">
+        <text encoding="base64">CiAgICAgICAgICBDb2xvci5CTEFDSwogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICBDb2xvci5XSElURQogICAgICAgIH0=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIGFzc2VydFRocm93czw+IHsgIH0oKSB7Cg==</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgIH0K</text>
+        <text encoding="base64">ICB2YWwgaXNQYWlyID0geyBpOiBJbnQsIGo6IEludCAtPiAoaSArIGopICUgMiA9PSAwIH0K</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgIEFzc2VydGlvbnMuYXNzZXJ0RG9lc05vdFRocm93IHsKICAgICAgdmFsIGJvYXJkID0gQm9hcmQoMSkK</text>
+        <text encoding="base64">ICAgIHZhbCBpc1BhaXIgPSB7IGk6IEludCwgajogSW50IC0+IChpICsgaikgJSAyID09IDAgfQo=</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgIEFzc2VydGlvbnMuYXNzZXJ0RG9lc05vdFRocm93PEV4Y2VwdGlvbj4gewogICAgICBCb2FyZCgK</text>
+        <text encoding="base64">ICAgICAgICAK</text>
       </register>
-      <register name="9" type="4">
-        <text>1)
-    }</text>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgIAo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
