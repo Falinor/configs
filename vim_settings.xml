@@ -30,19 +30,23 @@
         <mark key="^" line="0" column="34" />
         <mark key="." line="0" column="34" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" timestamp="1540411850267">
+      <file name="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" timestamp="1540583737679">
         <mark key="'" line="51" column="0" />
-        <mark key="[" line="55" column="6" />
-        <mark key="]" line="55" column="9" />
-        <mark key="." line="55" column="9" />
-        <mark key="^" line="55" column="9" />
+        <mark key="[" line="55" column="26" />
+        <mark key="]" line="55" column="24" />
+        <mark key="." line="55" column="24" />
+        <mark key="^" line="55" column="24" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Main.kt" timestamp="1540580401925">
-        <mark key="'" line="8" column="0" />
-        <mark key="[" line="6" column="2" />
-        <mark key="]" line="6" column="1" />
-        <mark key="." line="6" column="1" />
-        <mark key="^" line="6" column="1" />
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Main.kt" timestamp="1540582397819">
+        <mark key="'" line="10" column="0" />
+        <mark key="[" line="7" column="13" />
+        <mark key="]" line="9" column="0" />
+        <mark key="." line="9" column="0" />
+      </file>
+      <file name="$USER_HOME$/Dev/tak/src/test/kotlin/GameManagerTest.groovy" timestamp="1540583353470">
+        <mark key="[" line="0" column="22" />
+        <mark key="]" line="0" column="22" />
+        <mark key="." line="0" column="22" />
       </file>
       <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Point.kt" timestamp="1540408617092">
         <mark key="[" line="0" column="20" />
@@ -50,11 +54,11 @@
         <mark key="^" line="0" column="4" />
         <mark key="." line="0" column="18" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/GameManager.kt" timestamp="1540580214353">
-        <mark key="[" line="1" column="2" />
-        <mark key="]" line="1" column="9" />
-        <mark key="." line="1" column="9" />
-        <mark key="^" line="1" column="9" />
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/GameManager.kt" timestamp="1540583295423">
+        <mark key="[" line="11" column="51" />
+        <mark key="]" line="7" column="17" />
+        <mark key="." line="7" column="17" />
+        <mark key="^" line="7" column="17" />
       </file>
       <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Stone.kt" timestamp="1540412050462">
         <mark key="[" line="0" column="21" />
@@ -62,13 +66,13 @@
         <mark key="^" line="0" column="30" />
         <mark key="." line="0" column="21" />
       </file>
-      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Board.kt" timestamp="1540580170923">
-        <mark key="[" line="3" column="2" />
-        <mark key="]" line="2" column="9" />
-        <mark key="^" line="2" column="9" />
-        <mark key="." line="2" column="9" />
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Board.kt" timestamp="1540583598010">
+        <mark key="[" line="25" column="44" />
+        <mark key="]" line="25" column="44" />
+        <mark key="." line="25" column="44" />
+        <mark key="^" line="25" column="44" />
       </file>
-      <file name="/fragment.java" timestamp="1540408769437">
+      <file name="/fragment.java" timestamp="1540583299642">
         <mark key="[" line="0" column="0" />
       </file>
       <file name="$USER_HOME$/Downloads/demo/src/main/java/com/example/demo/user/User.java" timestamp="1531428861177">
@@ -99,13 +103,15 @@
       <jump line="3" column="7" filename="$USER_HOME$/Dev/tak/src/main/kotlin/Main.kt" />
       <jump line="0" column="0" filename="$USER_HOME$/Dev/tak/src/main/kotlin/Main.kt" />
       <jump line="9" column="0" filename="$USER_HOME$/Dev/tak/src/main/kotlin/Main.kt" />
+      <jump line="7" column="2" filename="$USER_HOME$/Dev/tak/src/main/kotlin/GameManager.kt" />
+      <jump line="1" column="14" filename="$USER_HOME$/Dev/tak/src/main/kotlin/GameManager.kt" />
     </jumps>
     <registers>
-      <register name="&quot;" type="2">
-        <text encoding="base64">ICBHYW1lTWFuYWdlci4K</text>
+      <register name="&quot;" type="4">
+        <text>,</text>
       </register>
       <register name="-" type="4">
-        <text>p2</text>
+        <text>,</text>
       </register>
       <register name="/" type="4">
         <text>5</text>
@@ -114,31 +120,31 @@
         <text encoding="base64">ICBAVGVzdAogIGludGVybmFsIGZ1biB3aGVuQ29uc3RydWN0aW5nQm9hcmRXaXRoU2l6ZTVfdGhlblJldHVybjV4NUJvYXJkKCkgewogICAgdmFsIGJvYXJkID0gQm9hcmQoNSkKICAgIEFzc2VydGlvbnMuYXNzZXJ0RXF1YWxzKDUsIGJvYXJkLnNpemUpCiAgICBBc3NlcnRpb25zLmFzc2VydEVxdWFscygyMSwgYm9hcmQuc3RvbmVzKQogICAgQXNzZXJ0aW9ucy5hc3NlcnRFcXVhbHMoMSwgYm9hcmQuY2Fwc3RvbmVzKQogIH0K</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICBHYW1lTWFuYWdlci4K</text>
+        <text encoding="base64">ICB2YWwgbWF0cml4OiBBcnJheTxBcnJheTxTcXVhcmU+Pgo=</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">Cgo=</text>
+        <text encoding="base64">ICAK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgIHZhbCBwMSA9IFBsYXllcihDb2xvci5CTEFDSykKICAgIHZhbCBwMgo=</text>
+        <text encoding="base64">ICBwcml2YXRlIHZhbCBtYXRyaXg6IEFycmF5PEFycmF5PFNxdWFyZT4+Cg==</text>
       </register>
-      <register name="4" type="4">
-        <text encoding="base64">ICAKICBjb25zdHJ1Y3RvcigpIHsKICAgIAogIH0=</text>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgIHdoaXRlID0gUGxheWVyKENvbG9yLkJMQUNLKQogICAgYmxhY2sgPSBQbGF5ZXIoQ29sb3IuV0hJVEUpCg==</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgIEFzc2VydGlvbnMuYXNzZXJ0VGhyb3dzKCkK</text>
+        <text encoding="base64">ICAK</text>
       </register>
-      <register name="6" type="4">
-        <text encoding="base64">CiAgZnVuIHJlc2V0KCkgewogICAgZm9yIChpIGluIG1hdHJpeC5pbmRpY2VzKQogICAgICBmb3IgKGogaW4gbWF0cml4W2ldLmluZGljZXMpIHsKICAgICAgICB2YWwgY29sb3I6IENvbG9yID0gaWYgKGlzUGFpcihpLCBqKSkgQ29sb3IuQkxBQ0sgZWxzZSBDb2xvci5XSElURQogICAgICAgIG1hdHJpeFtpXVtqXSA9IFNxdWFyZShjb2xvcikKICAgICAgfQogIH0=</text>
+      <register name="6" type="2">
+        <text encoding="base64">ICBwcml2YXRlIHZhciB0dXJuVG86IFBsYXllcgo=</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICB2YWwgY29sb3IgPSBpZiBpc1BhaXIoaSwgaikgQ29sb3IuQkxBQ0sgZWxzZSBDb2xvci5XSElURQo=</text>
+        <text encoding="base64">ICAgIHZhbCBibGFjayA9IDEK</text>
       </register>
-      <register name="8" type="4">
-        <text encoding="base64">CiAgICAgICAgICBDb2xvci5CTEFDSwogICAgICAgIH0gZWxzZSB7CiAgICAgICAgICBDb2xvci5XSElURQogICAgICAgIH0=</text>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgIHZhbCB3aGl0ZSA9IDAK</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">Cg==</text>
+        <text encoding="base64">ICAgIHBsYXllcnMgPSBsaXN0T2Yod2hpdGUsIGJsYWNrKQo=</text>
       </register>
       <register name=":" type="4">
         <text>w</text>
