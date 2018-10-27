@@ -36,6 +36,12 @@
         <mark key="^" line="0" column="34" />
         <mark key="." line="0" column="34" />
       </file>
+      <file name="$USER_HOME$/Dev/tak/src/main/kotlin/Movable.kt" timestamp="1540674506329">
+        <mark key="[" line="1" column="30" />
+        <mark key="]" line="1" column="27" />
+        <mark key="^" line="1" column="27" />
+        <mark key="." line="1" column="27" />
+      </file>
       <file name="$USER_HOME$/Dev/tak/src/test/kotlin/BoardTest.kt" timestamp="1540585611666">
         <mark key="'" line="51" column="0" />
         <mark key="[" line="3" column="0" />
@@ -114,10 +120,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text encoding="base64">dHVyblRvIA==</text>
+        <text>Unit</text>
       </register>
       <register name="-" type="4">
-        <text encoding="base64">dHVyblRvIA==</text>
+        <text>Unit</text>
       </register>
       <register name="/" type="4">
         <text>5</text>
