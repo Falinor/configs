@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/inad/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -101,7 +101,7 @@ alias drmps='docker rm $(docker ps -a -q)'
 alias drmi='docker rmi $(docker images -q)'
 
 # nvm settings
-export NVM_DIR="/Users/inad/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Java maven aliases
@@ -123,4 +123,4 @@ function pythonframework() {
 export PATH="$HOME/.yarn/bin:$PATH"
 
 # added by travis gem
-[ -f /Users/inad/.travis/travis.sh ] && source /Users/inad/.travis/travis.sh
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
