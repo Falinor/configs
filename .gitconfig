@@ -1,6 +1,6 @@
 [user]
-	name = Andrea Gueugnaut
-	email = andrea.gueugnaut@gmail.com
+  name = Andrea Gueugnaut
+  email = andrea.gueugnaut@gmail.com
 [core]
   ui = true
   interactive = true
@@ -8,20 +8,25 @@
   branch = true
   diff = true
   editor = vim
+  autocrlf = input
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [push]
-	default = current
+  default = current
 [alias]
-	civ = commit
-	lg = log --decorate --branches --graph
+  b = branch
+  civ = commit
+  cl = clone
+  cmi = commit -m
+  co = checkout
+  lg = log --decorate --branches --graph
   lgo = log --graph --decorate --oneline --abbrev-commit --all
+  pull = pull --rebase
   slog = shortlog
-	b = branch
-	cmi = commit -m
-	co = checkout
-	cl = clone
+  st = status
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[fetch]
+  prune = true
