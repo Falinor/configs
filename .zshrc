@@ -59,14 +59,14 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -106,9 +106,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Java maven aliases
 export M2_HOME=/opt/maven
-export PATH=/opt/maven/bin:$PATH
-
-export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/sbin:/opt/maven/bin:$PATH
 
 # Fix python virtualenv framework installation
 # matplotlib and some other libs won't work without this
