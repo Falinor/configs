@@ -29,9 +29,11 @@ if [ ! -d /Applications/iTerm.app ]; then
     echo "Done installing iTerm2." >> $OLDPWD/setup.log
 fi
 
-# Neobundle -> neocomplete, vim-airline
-brew install vim --with-lua --with-python3 --with-override-system-vi
-curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+# vim
+# https://github.com/amix/vimrc
+brew install vim --with-override-system-vi
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 # Reload zsh configuration
 source ~/.zshrc
@@ -43,5 +45,4 @@ source ~/.zshrc
 echo "\n----- TODO -----\n"
 
 echo "Install code editors\n"
-echo "Install Monaco for Powerline font\n"
 echo "Setup ssh\n"
