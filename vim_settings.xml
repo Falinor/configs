@@ -103,6 +103,12 @@
         <mark key="." line="32" column="24" />
         <mark key="^" line="32" column="24" />
       </file>
+      <file name="$USER_HOME$/Dev/recfun/.gitignore" timestamp="1563649153073">
+        <mark key="'" line="22" column="0" />
+        <mark key="[" line="14" column="0" />
+        <mark key="]" line="14" column="0" />
+        <mark key="." line="14" column="0" />
+      </file>
       <file name="/fragment.java" timestamp="1563583195781">
         <mark key="[" line="0" column="0" />
       </file>
@@ -119,10 +125,13 @@
     <jumps>
       <jump line="11" column="4" filename="$USER_HOME$/Dev/recfun/src/test/scala/recfun/PascalSuite.scala" />
       <jump line="13" column="3" filename="$USER_HOME$/Dev/recfun/src/test/scala/recfun/PascalSuite.scala" />
+      <jump line="19" column="0" filename="$USER_HOME$/Dev/recfun/.gitignore" />
+      <jump line="2" column="0" filename="$USER_HOME$/Dev/recfun/.gitignore" />
+      <jump line="23" column="0" filename="$USER_HOME$/Dev/recfun/.gitignore" />
     </jumps>
     <registers>
       <register name="&quot;" type="2">
-        <text encoding="base64">ICB8IGkgPT0gaiArIDEK</text>
+        <text encoding="base64">Lmhpc3RvcnkK</text>
       </register>
       <register name="-" type="4">
         <text>Int</text>
@@ -134,34 +143,34 @@
         <text encoding="base64">ICAgIHRlc3QoInBhc2NhbDogY29sPS0xLHJvdz0wIikgewogICAgICBhc3NlcnQocGFzY2FsKC0xLCAwKSA9PT0gMCkKICAgIH0=</text>
       </register>
       <register name="1" type="2">
-        <text encoding="base64">ICB8IGkgPT0gaiArIDEK</text>
+        <text encoding="base64">Lmhpc3RvcnkK</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">ICAKICB0ZXN0KCkK</text>
+        <text encoding="base64">Lmhpc3RvcnkK</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">ICAgICAgCiAgICAgIHRlc3QoICkK</text>
+        <text encoding="base64">b3V0Cg==</text>
       </register>
-      <register name="4" type="4">
-        <text encoding="base64">CiAgICAgIGNhc2UgKGksIGopIGlmIGkgPT0gaiArIDEgJiYgaiA+PSAwID0+IDE=</text>
+      <register name="4" type="2">
+        <text encoding="base64">Ki5jbGFzcwo=</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgY2FzZSAoaSwgaikgaWYgaSA8IDAgJiYgaiA8IDAgPT4gMAo=</text>
+        <text encoding="base64">IyMjIEV4YW1wbGUgdXNlciB0ZW1wbGF0ZSB0ZW1wbGF0ZQo=</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICAKCg==</text>
+        <text encoding="base64">ICB8IGkgPT0gaiArIDEK</text>
       </register>
-      <register name="7" type="4">
-        <text encoding="base64">CiAgICAgIGNhc2UgKGksIGopIGlmIGkgPCAwICYmIGogPCAwID0+IDA=</text>
+      <register name="7" type="2">
+        <text encoding="base64">ICAKICB0ZXN0KCkK</text>
       </register>
       <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICBjYQogICAgICBjYXNlICgwLCBfKQo=</text>
+        <text encoding="base64">ICAgICAgCiAgICAgIHRlc3QoICkK</text>
       </register>
-      <register name="9" type="2">
-        <text encoding="base64">ICAgICAgCiAgICB9Cg==</text>
+      <register name="9" type="4">
+        <text encoding="base64">CiAgICAgIGNhc2UgKGksIGopIGlmIGkgPT0gaiArIDEgJiYgaiA+PSAwID0+IDE=</text>
       </register>
       <register name=":" type="4">
-        <text>w</text>
+        <text>wq</text>
       </register>
     </registers>
     <search>
@@ -182,6 +191,7 @@
         <entry encoding="base64">JzwsJz5zLzUvNi9n</entry>
         <entry encoding="base64">JzwsJz5zLzUvOC9n</entry>
         <entry>w</entry>
+        <entry>wq</entry>
       </history-cmd>
       <history-expr />
       <history-input />
