@@ -20,6 +20,12 @@
         <mark key="." line="16" column="33" />
         <mark key="^" line="16" column="24" />
       </file>
+      <file name="$USER_HOME$/Dev/scala-certification/week1-recfun/src/main/scala/recfun/Main.scala" timestamp="1563951330225">
+        <mark key="[" line="35" column="62" />
+        <mark key="]" line="31" column="0" />
+        <mark key="." line="31" column="0" />
+        <mark key="^" line="30" column="26" />
+      </file>
       <file name="$USER_HOME$/Dev/tak/build.gradle.kts" timestamp="1537908294341">
         <mark key="'" line="0" column="0" />
         <mark key="[" line="16" column="0" />
@@ -130,11 +136,11 @@
       <jump line="23" column="0" filename="$USER_HOME$/Dev/recfun/.gitignore" />
     </jumps>
     <registers>
-      <register name="&quot;" type="4">
-        <text>=</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">ICAgICAgICAgIHJldHVybiB0cnVlCg==</text>
       </register>
       <register name="-" type="4">
-        <text>=</text>
+        <text encoding="base64">ICYmIGxldmVsID09IDA=</text>
       </register>
       <register name="/" type="4">
         <text>5</text>
@@ -142,32 +148,36 @@
       <register name="0" type="4">
         <text encoding="base64">ICAgIHRlc3QoInBhc2NhbDogY29sPS0xLHJvdz0wIikgewogICAgICBhc3NlcnQocGFzY2FsKC0xLCAwKSA9PT0gMCkKICAgIH0=</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">CgogICAgfQ==</text>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICAgIHJldHVybiB0cnVlCg==</text>
       </register>
       <register name="2" type="2">
-        <text encoding="base64">Lmhpc3RvcnkK</text>
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="3" type="2">
-        <text encoding="base64">Lmhpc3RvcnkK</text>
+        <text encoding="base64">ICAgICAgICBjYXNlIFBBUkVOX09QRU4gPT4gYmFsYW5jZVJlYyhjaGFycy50YWlsLCBsZXZlbCArIDEpCg==</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">b3V0Cg==</text>
+        <text encoding="base64">ICAgICAgICBjYXNlIFBBUkVOX0NMT1NFIGlmIGxldmVsID4gMCA9PiBiYWxhbmNlUmVjKGNoYXJzLnRhaWwsIGxldmVsIC0gMSkK</text>
       </register>
-      <register name="5" type="2">
-        <text encoding="base64">Ki5jbGFzcwo=</text>
+      <register name="5" type="4">
+        <text>{
+        chars.head match {
+          
+        }
+      }</text>
       </register>
       <register name="6" type="2">
-        <text encoding="base64">IyMjIEV4YW1wbGUgdXNlciB0ZW1wbGF0ZSB0ZW1wbGF0ZQo=</text>
+        <text encoding="base64">ICAgICAgICBjaGFycy5oZWFkCg==</text>
       </register>
       <register name="7" type="2">
-        <text encoding="base64">ICB8IGkgPT0gaiArIDEK</text>
+        <text encoding="base64">ICAgICAgZGVmIGJhbGFuY2VSZWMoKQo=</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAKICB0ZXN0KCkK</text>
+      <register name="8" type="4">
+        <text encoding="base64">CgogICAgfQ==</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgCiAgICAgIHRlc3QoICkK</text>
+        <text encoding="base64">Lmhpc3RvcnkK</text>
       </register>
       <register name=":" type="4">
         <text>wq</text>
