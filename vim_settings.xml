@@ -20,11 +20,11 @@
         <mark key="." line="16" column="33" />
         <mark key="^" line="16" column="24" />
       </file>
-      <file name="$USER_HOME$/Dev/scala-certification/week1-recfun/src/main/scala/recfun/Main.scala" timestamp="1564232829127">
-        <mark key="[" line="46" column="6" />
-        <mark key="]" line="46" column="5" />
-        <mark key="." line="46" column="5" />
-        <mark key="^" line="46" column="5" />
+      <file name="$USER_HOME$/Dev/scala-certification/week1-recfun/src/main/scala/recfun/Main.scala" timestamp="1564236352039">
+        <mark key="[" line="46" column="26" />
+        <mark key="]" line="46" column="25" />
+        <mark key="." line="46" column="25" />
+        <mark key="^" line="46" column="25" />
       </file>
       <file name="$USER_HOME$/Dev/tak/build.gradle.kts" timestamp="1537908294341">
         <mark key="'" line="0" column="0" />
@@ -137,10 +137,10 @@
     </jumps>
     <registers>
       <register name="&quot;" type="4">
-        <text>???</text>
+        <text encoding="base64">bW9uZXkg</text>
       </register>
       <register name="-" type="4">
-        <text>???</text>
+        <text encoding="base64">bW9uZXkg</text>
       </register>
       <register name="/" type="4">
         <text>5</text>
