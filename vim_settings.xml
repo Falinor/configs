@@ -110,6 +110,9 @@
         <mark key="]" line="9" column="0" />
         <mark key="." line="9" column="0" />
       </file>
+      <file name="$USER_HOME$/Dev/scala-certification/week2-funsets/src/main/scala/funsets/FunSets.scala" timestamp="1564309752366">
+        <mark key="'" line="1" column="0" />
+      </file>
       <file name="$USER_HOME$/Dev/tak/src/main/kotlin/GameManager.kt" timestamp="1540585987486">
         <mark key="[" line="3" column="2" />
         <mark key="]" line="3" column="2" />
@@ -145,6 +148,7 @@
       <jump line="2" column="0" filename="$USER_HOME$/Dev/recfun/.gitignore" />
       <jump line="23" column="0" filename="$USER_HOME$/Dev/recfun/.gitignore" />
       <jump line="47" column="17" filename="$USER_HOME$/Dev/scala-certification/week1-recfun/src/main/scala/recfun/Main.scala" />
+      <jump line="1" column="0" filename="$USER_HOME$/Dev/scala-certification/week2-funsets/src/main/scala/funsets/FunSets.scala" />
     </jumps>
     <registers>
       <register name="&quot;" type="2">
