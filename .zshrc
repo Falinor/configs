@@ -122,3 +122,12 @@ export PATH="$HOME/.yarn/bin:$PATH"
 
 # added by travis gem
 [ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
+
+function generate_password {
+  echo $(LC_CTYPE=C < /dev/urandom tr -dc A-Za-z0-9 | head -c ${1:-64})
+}
+
+# added by travis gem
+[ -f /Users/andrea.gueugnaut/.travis/travis.sh ] && source /Users/andrea.gueugnaut/.travis/travis.sh
+
+eval $(thefuck --alias)

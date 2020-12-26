@@ -14,7 +14,8 @@ cp -r $OLDPWD/.vim .
 # /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Core packages
-brew install wget curl git tree
+brew install wget curl git tree jq thefuck tldr
+brew install yarn --without-node
 
 # Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
