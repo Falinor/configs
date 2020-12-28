@@ -16,6 +16,8 @@ cp -r $OLDPWD/.vim .
 # Core packages
 brew install wget curl git tree jq thefuck tldr
 brew install yarn --without-node
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
 
 # Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
