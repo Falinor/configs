@@ -131,3 +131,10 @@ function generate_password {
 [ -f /Users/andrea.gueugnaut/.travis/travis.sh ] && source /Users/andrea.gueugnaut/.travis/travis.sh
 
 eval $(thefuck --alias)
+
+# Youtube-dl
+alias youdl="youtube-dl -o '%(title)s.%(ext)s'"
+
+# Python $PATH
+export PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
+export PATH="$PATH:$PYTHON_BIN_PATH"
