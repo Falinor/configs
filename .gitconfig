@@ -30,3 +30,7 @@
   required = true
 [fetch]
   prune = true
+[init]
+  defaultBranch = master
+[pull]
+  rebase = true

@@ -54,7 +54,9 @@ plugins=(git docker docker-compose)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
+
+# Add homebrew to the PATH
+export PATH="/opt/homebrew/sbin:/opt/homebrew/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,35 +91,14 @@ export pager=most
 alias c='clear'
 alias t='tree'
 
-# SQL aliases
-alias mysql='/usr/local/mysql/bin/mysql'
-alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
-alias psql='/Library/PostgreSQL/9.5/scripts/runpsql.sh; exit'
-
 # Docker aliases
+
 # Delete all containers
 alias drmps='docker rm $(docker ps -a -q)'
 # Delete all images
 alias drmi='docker rmi $(docker images -q)'
 
-# nvm settings
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# Java maven aliases
-export M2_HOME=/opt/maven
-export PATH=/usr/local/sbin:/opt/maven/bin:$PATH
-
-# Fix python virtualenv framework installation
-# matplotlib and some other libs won't work without this
-function pythonframework() {
-  if [[ ! -z "$VIRTUAL_ENV" ]]; then
-    PYTHONHOME=$VIRTUAL_ENV /usr/local/bin/python3 "$@"
-  else
-    /usr/local/bin/python3 "$@"
-  fi
-}
-
+# Add yarn to the PATH
 export PATH="$HOME/.yarn/bin:$PATH"
 
 # added by travis gem
@@ -135,6 +116,7 @@ eval $(thefuck --alias)
 # Youtube-dl
 alias youdl="youtube-dl -o '%(title)s.%(ext)s'"
 
-# Python $PATH
-export PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"
-export PATH="$PATH:$PYTHON_BIN_PATH"
+# Node version manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
