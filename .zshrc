@@ -90,6 +90,7 @@ export pager=most
 # General aliases
 alias c='clear'
 alias t='tree'
+alias ls='ls -lh --color'
 
 # Docker aliases
 
@@ -98,25 +99,54 @@ alias drmps='docker rm $(docker ps -a -q)'
 # Delete all images
 alias drmi='docker rmi $(docker images -q)'
 
-# Add yarn to the PATH
-export PATH="$HOME/.yarn/bin:$PATH"
-
-# added by travis gem
-[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
-
 function generate_password {
   echo $(LC_CTYPE=C < /dev/urandom tr -dc A-Za-z0-9 | head -c ${1:-64})
 }
 
-# added by travis gem
-[ -f /Users/andrea.gueugnaut/.travis/travis.sh ] && source /Users/andrea.gueugnaut/.travis/travis.sh
-
 eval $(thefuck --alias)
 
 # Youtube-dl
-alias youdl="youtube-dl -o '%(title)s.%(ext)s'"
+alias youdl="yt-dlp"
+alias brewup="brew update && brew upgrade"
 
-# Node version manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+# Created by `pipx` on 2024-12-30 15:20:52
+export PATH="$PATH:/Users/inad/.local/bin"
+
+# For building whisper.cpp
+export CPLUS_INCLUDE_PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1
+export PATH="$HOME/.dotnet/tools:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/inad/.config/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/inad/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
+# Android SDK
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
+
+# zulu@17 for Expo builds
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+
+
+# Claude multi-account support
+source "/Users/inad/dev/claude-account-switcher/claude-profile.sh"

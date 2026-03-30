@@ -1,18 +1,23 @@
-[user]
-  name = Andrea Gueugnaut
-  email = andrea.gueugnaut@gmail.com
+[include]
+  path = ~/.gitconfig.local
+
 [core]
+  editor = vim
+  autocrlf = input
+	excludesfile = ~/.gitignore
+
+[color]
   ui = true
   interactive = true
   status = auto
   branch = true
   diff = true
-  editor = vim
-  autocrlf = input
 [merge]
   tool = vimdiff
 [push]
   default = current
+	autoSetupRemote = true
+	followTags = true
 [alias]
   b = branch
   civ = commit
@@ -24,13 +29,24 @@
   pull = pull --rebase
   slog = shortlog
   st = status
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|main\\|prod' | xargs -n 1 -r git branch -d"
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
 [fetch]
-  prune = true
+	prune = true
+	pruneTags = true
+	all = true
 [init]
-  defaultBranch = master
+	defaultBranch = main
 [pull]
-  rebase = true
+	rebase = true
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[rerere]
+	enabled = true
+	autoupdate = true

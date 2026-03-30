@@ -1,0 +1,36 @@
+#!/bin/bash
+# Runs automatically after `yadm clone`.
+
+# Git identity (kept out of the repo)
+if [ ! -f "$HOME/.gitconfig.local" ]; then
+  read -p "Git name: " git_name
+  read -p "Git email: " git_email
+  printf "[user]\n  name = %s\n  email = %s\n" "$git_name" "$git_email" > ~/.gitconfig.local
+fi
+
+# Homebrew packages & casks
+brew bundle --global
+
+# Oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+# vim
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+# Node package manager
+corepack enable
+
+# Claude Code
+npm install -g @anthropic-ai/claude-code
+
+echo "\n----- TODO (manual installs) -----"
+echo "SSH keys           → copy ~/.ssh/ from old machine"
+echo "Claude settings    → copy ~/.claude/settings.json, ~/.claude/CLAUDE.md, ~/.claude/skills/"
+echo "DaVinci Resolve    → blackmagicdesign.com"
+echo "Toggl Track        → toggl.com/track/toggl-desktop"
+echo "Riot Client        → riotgames.com"
+echo "AutoCut            → autocut.ai"
+echo "Maestro Studio     → brew install maestro, then launch Studio"
+echo "Xcode              → Mac App Store (15GB+, install separately)"
+echo "Unsplash Wallpapers → Mac App Store"
