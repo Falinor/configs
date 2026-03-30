@@ -17,6 +17,9 @@ brew "supabase"
 brew "clever-tools"
 brew "duckdb"
 brew "httpie"
+brew "http-server"
+brew "maestro"
+brew "terraform"
 
 # Fonts
 cask "font-fira-code"
@@ -27,7 +30,7 @@ cask "iterm2"
 # Editors & dev tools
 brew "vim"
 cask "visual-studio-code"
-cask "docker"
+cask "docker-desktop"
 cask "postman"
 cask "figma"
 
