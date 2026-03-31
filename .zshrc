@@ -99,10 +99,6 @@ alias drmps='docker rm $(docker ps -a -q)'
 # Delete all images
 alias drmi='docker rmi $(docker images -q)'
 
-function generate_password {
-  echo $(LC_CTYPE=C < /dev/urandom tr -dc A-Za-z0-9 | head -c ${1:-64})
-}
-
 eval $(thefuck --alias)
 
 # Youtube-dl
@@ -118,15 +114,8 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 # uninstall by removing these lines
 [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
 
-# Created by `pipx` on 2024-12-30 15:20:52
-export PATH="$PATH:/Users/inad/.local/bin"
-
-# For building whisper.cpp
-export CPLUS_INCLUDE_PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1
-export PATH="$HOME/.dotnet/tools:$PATH"
-
 # pnpm
-export PNPM_HOME="/Users/inad/.config/pnpm"
+export PNPM_HOME="$HOME/.config/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -135,7 +124,7 @@ esac
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
-fpath=(/Users/inad/.docker/completions $fpath)
+fpath=($HOME/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
@@ -149,4 +138,4 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 
 # Claude multi-account support
-source "/Users/inad/dev/claude-account-switcher/claude-profile.sh"
+source "$HOME/dev/claude-account-switcher/claude-profile.sh"
