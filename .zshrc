@@ -49,7 +49,12 @@ ZSH_THEME="af-magic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker docker-compose)
+plugins=(
+    git
+    docker
+    httpie
+    zsh-autosuggestions
+)
 
 # User configuration
 
@@ -92,23 +97,17 @@ alias c='clear'
 alias t='tree'
 alias ls='ls -lh --color'
 
-# Docker aliases
-
-# Delete all containers
-alias drmps='docker rm $(docker ps -a -q)'
-# Delete all images
-alias drmi='docker rmi $(docker images -q)'
-
 eval $(thefuck --alias)
 
 # Youtube-dl
 alias youdl="yt-dlp"
 alias brewup="brew update && brew upgrade"
 
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # tabtab source for packages
 # uninstall by removing these lines
@@ -130,12 +129,35 @@ compinit
 # End of Docker CLI completions
 
 # Android SDK
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
+export ANDROID_HOME="/opt/homebrew/share/android-commandlinetools"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator"
 
 # zulu@17 for Expo builds
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 
 
 # Claude multi-account support
 source "$HOME/dev/claude-account-switcher/claude-profile.sh"
+
+# Postgres CLI using libpq
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# NVM
+# Add the following to your shell profile e.g. ~/.profile or ~/.zshrc:
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# Auto-use .nvmrc when changing directories
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local nvmrc_path
+  nvmrc_path="$(nvm_find_nvmrc)"
+  if [ -n "$nvmrc_path" ]; then
+    nvm use --silent
+  elif [ "$(nvm version)" != "$(nvm version default)" ]; then
+    nvm use default --silent
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc

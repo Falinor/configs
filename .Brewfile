@@ -10,15 +10,16 @@ brew "node"
 brew "mole"
 brew "gh"
 brew "yt-dlp"
-brew "wt"
+brew "worktrunk"
 brew "htop"
-brew "dotenvx"
+brew "dotenvx/brew/dotenvx"
 brew "supabase"
-brew "clever-tools"
+brew "CleverCloud/homebrew-tap/clever-tools"
 brew "duckdb"
 brew "httpie"
 brew "http-server"
-brew "maestro"
+# Maestro CLI
+brew "mobile-dev-inc/tap/maestro"
 brew "terraform"
 
 # Fonts
@@ -51,6 +52,7 @@ cask "blender"
 
 # AI
 cask "claude"
+cask "claude-code"
 
 # Productivity
 cask "notion"
